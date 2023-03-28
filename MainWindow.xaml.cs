@@ -24,5 +24,10 @@ namespace computer
         {
             InitializeComponent();
         }
+
+        private void btnAC_Click(object sender, RoutedEventArgs e)
+        {
+            txt_number.Text = "0";
+        }
     }
 }
