@@ -133,28 +133,28 @@ namespace computer
         {
             Firstnumber = Convert.ToSingle(txt_number.Text);
             //ToSingle只是把字串轉成浮點數(用Todouble也行)
-            txt_number.Text = "+";
+            txt_number.Text = "0";
             operation = 0;//輸出+的代號
         }
 
         private void btn_reduce_Click(object sender, RoutedEventArgs e)
         {
             Firstnumber = Convert.ToSingle(txt_number.Text);
-            txt_number.Text = "-";
+            txt_number.Text = "0";
             operation = 1;//輸出-的代號
         }
 
         private void btn_multiplication_Click(object sender, RoutedEventArgs e)
         {
             Firstnumber = Convert.ToSingle(txt_number.Text);
-            txt_number.Text = "*";
+            txt_number.Text = "0";
             operation = 2;//輸出*的代號
         }
 
         private void btn_division_Click(object sender, RoutedEventArgs e)
         {
             Firstnumber = Convert.ToSingle(txt_number.Text);
-            txt_number.Text = "/";
+            txt_number.Text = "0";
             operation = 3;//輸出/的代號
         }
 
