@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txt_number" HorizontalAlignment="Left" Height="65" Margin="75,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" FontSize="25" TextAlignment="Right" Text="0"/>
+        <TextBox x:Name="txt_number" HorizontalAlignment="Left" Height="65" Margin="75,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" FontSize="36" TextAlignment="Right" Text="0"/>
         <Button x:Name="btnAC" Content="AC" HorizontalAlignment="Left" Height="52" Margin="49,114,0,0" VerticalAlignment="Top" Width="102" FontSize="36" Click="btnAC_Click"/>
         <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Height="52" Margin="197,114,0,0" VerticalAlignment="Top" Width="102" FontSize="36" Click="btn7_Click"/>
         <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Height="52" Margin="349,114,0,0" VerticalAlignment="Top" Width="102" FontSize="36" Click="btn8_Click"/>

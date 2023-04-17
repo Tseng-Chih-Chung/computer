@@ -28,104 +28,81 @@ namespace computer
         double Firstnumber;//第一個數值
         double Secondnumber;//第二個數值
         int operation;//+-*/的名稱
+        void same()
+        {
+            if (txt_number.Text == "0")
+            {
+                txt_number.Text = "";
+            }
+            //如果預設數只有0就清零再添加對應數字
+        }
 
         private void btnAC_Click(object sender, RoutedEventArgs e)
         {
             txt_number.Text = "0";
             Firstnumber = 0;
             Secondnumber = 0;
-            operation = -1;
+            operation = -1; //這邊感覺可以不用加
             //只要按AllClean(AC)就把一切重製
         }
 
         private void btc1_Click(object sender, RoutedEventArgs e)
         {
-            if(txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "1";
-            //如果預設數只有0就清零再添加對應數字
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "2";
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "3";
         }
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "4";
         }
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "5";
         }
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "6";
         }
 
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "7";
         }
 
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "8";
         }
 
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "9";
         }
 
         private void btn0_Click(object sender, RoutedEventArgs e)
         {
-            if (txt_number.Text == "0")
-            {
-                txt_number.Text = "";
-            }
+            same();
             txt_number.Text += "0";
         }
 
@@ -133,6 +110,7 @@ namespace computer
         {
             Firstnumber = Convert.ToSingle(txt_number.Text);
             //ToSingle只是把字串轉成浮點數(用Todouble也行)
+            //double.TryParse(txt_number.Text, out Firstnumber); 這樣也可以
             txt_number.Text = "0";
             operation = 0;//輸出+的代號
         }
@@ -180,6 +158,7 @@ namespace computer
             txt_number.Text = string.Format("{0:0.#####}", Ans);
             Firstnumber = 0;
             Secondnumber = 0;
+            operation = -1; //讓再點一下=的數不會錯亂 像:非數值或呈現倒數(但會顯示0)
             Ans = 0;
             //做完運算後把一切浮點數歸零
         }
